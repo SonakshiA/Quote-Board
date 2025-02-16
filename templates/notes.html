@@ -1,0 +1,19 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/notes_style.css">
+    <title>Quote Board</title>
+</head>
+<body>
+  <h1>Your Quote Board!</h1>
+    <ul>
+      {% for quote in results %}
+        <li>
+            <h2>{{ quote.Quote }}</h2>
+            <p>{{ quote.Author }}</p>
+        </li>
+        {% endfor %}
+      </ul>
+</body>
+</html>
